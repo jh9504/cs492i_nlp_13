@@ -1,4 +1,4 @@
-# cs492i_nlp_13
+# cs492i_nlp_team13
 KAIST &amp; NAVER Deep Learning Lecture
 
 이거슨 아직 완성되기 전의 플젝 깃헙...
