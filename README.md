@@ -10,7 +10,7 @@ Seonhoon Kim (Naver)
 ## Edited by
 KAIST cs492i_nlp_team13
 
-\Hyeonuk Nam, Jinhyuk Ryu
+Hyeonuk Nam, Jinhyuk Ryu
 
 ## Train in NSML
 ```bash
@@ -22,9 +22,9 @@ sh run_nsml.sh
 sh run_local.sh
 ```
 
-## How to Improve?
+### Objective
 
-### Improve how to select the best answer among different contexts.
+##Improve how to select the best answer among different contexts.
 
 We deal with a QA task with a single question and multiple contexts (i.e., paragraphs). One of the most important issues in this type of task is in which paragraph to pick the answer span. Current naive implementation is comparing the probability in a prediction and choosing the paragraph with the largest. Implement a strategy to pick the best answer.
 
