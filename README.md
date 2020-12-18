@@ -1,5 +1,5 @@
 # cs492i_nlp_team13
-KAIST &amp; NAVER Deep Learning Lecture
+KAIST & NAVER Deep Learning Lecture
 
 \# korquad-open-cs492I
 KorQuad-Open Baseline Code for KAIST CS492I 2020 Fall
@@ -7,13 +7,16 @@ KorQuad-Open Baseline Code for KAIST CS492I 2020 Fall
 ## Original Author
 Seonhoon Kim (Naver)
 
+## Edited by
+KAIST cs492i_nlp_team13
+Hyeonuk Nam, Jinhyuk Ryu
+
 ## Train in NSML
 ```bash
 sh run_nsml.sh
 ```
 
 ## Train in Local
-
 ```bash
 sh run_local.sh
 ```
@@ -23,11 +26,6 @@ sh run_local.sh
 ### Improve how to select the best answer among different contexts.
 
 We deal with a QA task with a single question and multiple contexts (i.e., paragraphs). One of the most important issues in this type of task is in which paragraph to pick the answer span. Current naive implementation is comparing the probability in a prediction and choosing the paragraph with the largest. Implement a strategy to pick the best answer.
-
-See the codes:
-- https://github.com/dongkwan-kim/korquad-open-cs492i/blob/master/open_squad_metrics.py#L412
-- https://github.com/dongkwan-kim/korquad-open-cs492i/blob/master/open_squad_metrics.py#L639
-- https://github.com/dongkwan-kim/korquad-open-cs492i/blob/master/run_squad.py#L358
 
 **NOTE: In the baseline, you can find the huge gap between validation and test performances (f1-score), since the f1-score for the validation is measured per paragraph, and the f1-score for the test is measured per question.**
 
