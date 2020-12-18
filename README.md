@@ -8,7 +8,7 @@ KorQuad-Open Baseline Code for KAIST CS492I 2020 Fall
 Seonhoon Kim (Naver)
 
 ## Edited by
-KAIST cs492i_nlp_team13
+KAIST cs492i_nlp_team13 - 
 Hyeonuk Nam, Jinhyuk Ryu
 
 ## Train in NSML
