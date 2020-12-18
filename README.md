@@ -38,7 +38,3 @@ There are multiple contexts, but since there is a memory limit, we cannot includ
 
 See the codes:
 - https://github.com/dongkwan-kim/korquad-open-cs492i/blob/master/open_squad.py#L594
-
-### Change model and hyper-parameter configurations.
-
-Do as much as you want.
