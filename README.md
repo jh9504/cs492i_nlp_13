@@ -24,18 +24,16 @@ sh run_local.sh
 
 ### Objective
 
-##Improve how to select the best answer among different contexts.
+## Improve how to select the best answer among different contexts.
 
-We deal with a QA task with a single question and multiple contexts (i.e., paragraphs). One of the most important issues in this type of task is in which paragraph to pick the answer span. Current naive implementation is comparing the probability in a prediction and choosing the paragraph with the largest. Implement a strategy to pick the best answer.
-
-**NOTE: In the baseline, you can find the huge gap between validation and test performances (f1-score), since the f1-score for the validation is measured per paragraph, and the f1-score for the test is measured per question.**
-
-![val_f1](https://raw.githubusercontent.com/dongkwan-kim/korquad-open-cs492i/master/static/val_f1.png)
-![test_f1](https://raw.githubusercontent.com/dongkwan-kim/korquad-open-cs492i/master/static/test_f1.png)
+We deal with a QA task with a single question and multiple contexts (i.e., paragraphs). One of the most important issues in this type of task is in which paragraph to pick the answer span. Current naive implementation is comparing the probability in a prediction and choosing the paragraph with the largest.
+This NSML&KAIST CS492I_NLP Project aims to improve the given baseline code with manipulations 
 
 ### Improve how to select training samples considering a memory limit.
 
 There are multiple contexts, but since there is a memory limit, we cannot include everything in training. The baseline is using first three samples in sequence. Which training samples should we choose to learn the best representation? 
 
-See the codes:
-- https://github.com/dongkwan-kim/korquad-open-cs492i/blob/master/open_squad.py#L594
+### Our best model
+
+## Path to our pre-trained model in NSML
+'''kaist0013/korquad-open-ldbd3/126 electra_last'''
