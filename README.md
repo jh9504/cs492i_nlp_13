@@ -30,48 +30,16 @@ This README.md will help you with how to run our code using NSML platform
 ## Files
 General Help with what each files contain:
 
+open_squad.py
+
+open_squad_metrics.py
+
+run_nsml.sh
+
+run_squad.py
+
 setup.py 
  -contains prerequisite libraries if used additionally to what nsml provides by default
-
-models.py 
- - contains basic training models - [resnet18, resnet50, densenet121]
-Setting for pretrained is turned False, because we want to see how much our code can improve training acc,
-not how finely we can tune the pretrained models given.
-            
-ImageDataLoader_MT.py 
- - Slight change to oringinally given baseline ImageDataLoader.py, which introduced parameter k to
-   SimpleImageloader function. The k will allow augmentation to the training data to increase the number of
-   training dataset. This file basically allows the main file to pass on train/valid/test loader to the
-   train() function.
-
-main_MT_TSA_transform.py 
- - Changed from originally given baseline main.py. We added MeanTeacher method to training function,
- Introduced Time Signal Annealing technique in training function to load and train each epochs with 
- different datasets according to randomized transform selection using the function newly created as 
- well.
- The types of tests we offer are
-  1. Different applications of basic settings(we recommend setting A,B,C defined in the code: best result settings we tested):   
-   ```
-   a) no_trainaug k - number of augmentation for each training data
-   b) batchsize - training data batchsize
-   c) unlbatchsize - unlabeled data batchsize
-   d) epochdrop - epoch of which batch size drops
-   e) tbs_d - batchsize for epoch drop
-   f) utb_d - batchsize_unlabeled for eopch drop
-   g) epochdropdrop - epoch of which batchsize drops again (second drop)
-   h) tbs_dd - batchsize for epoch drops second time
-   i) utb_dd - unlabeled data batchsize for epoch drops second time 
-   ```                           
-### Objective
-
-## Improve how to select the best answer among different contexts.
-
-We deal with a QA task with a single question and multiple contexts (i.e., paragraphs). One of the most important issues in this type of task is in which paragraph to pick the answer span. Current naive implementation is comparing the probability in a prediction and choosing the paragraph with the largest.
-This NSML&KAIST CS492I_NLP Project aims to improve the given baseline code with manipulations 
-
-### Improve how to select training samples considering a memory limit.
-
-There are multiple contexts, but since there is a memory limit, we cannot include everything in training. The baseline is using first three samples in sequence. Which training samples should we choose to learn the best representation? 
 
 ## For Training
  - assuming you are allocated with at least one GPU, execute bash file - (for nsml: ./run_nsml.sh   for local: ./run_local.sh)
