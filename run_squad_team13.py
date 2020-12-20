@@ -48,7 +48,7 @@ from transformers import (
     ElectraTokenizer,
     get_linear_schedule_with_warmup,
 )
-from open_squad import squad_convert_examples_to_features
+from open_squad_team13 import squad_convert_examples_to_features
 
 '''
 from transformers.data.metrics.squad_metrics import (
@@ -60,12 +60,12 @@ from transformers.data.processors.squad import SquadResult, SquadV1Processor, Sq
 '''
 # ''
 # KorQuAD-Open-Naver-Search 사용할때 전처리 코드.
-from open_squad_metrics import (
+from open_squad_metrics_team13 import (
     compute_predictions_log_probs,
     compute_predictions_logits,
     squad_evaluate,
 )
-from open_squad import SquadResult, SquadV1Processor, SquadV2Processor
+from open_squad_team13 import SquadResult, SquadV1Processor, SquadV2Processor
 
 import nsml
 from nsml import DATASET_PATH, IS_ON_NSML
