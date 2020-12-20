@@ -27,7 +27,7 @@ This README.md will help you with how to run our code using NSML platform
 4. Upload our files to whichever program you prefer, and login to nsml account by typing $nsml login
 5. type your ID and PW. (In our case, it was the github account)
 
-## Files
+# Files
 General Help with what each files contain:
 
 run_nsml.sh
