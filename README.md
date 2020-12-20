@@ -41,10 +41,11 @@ The main file that contains the training implementation codes to run, select par
 
 open_squad.py
 - 
-
+The file contatins functions to open squad and allow encode, decode, tokenize.
 
 open_squad_metrics.py
 - 
+Used for open_squad.py. Has functions to support squad metrics such as computing f1 scores, raw scores, merge and evaluate, and normarlize answer (preprocessing)
 
 
 setup.py
