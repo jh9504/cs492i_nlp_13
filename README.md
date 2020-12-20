@@ -30,16 +30,26 @@ This README.md will help you with how to run our code using NSML platform
 ## Files
 General Help with what each files contain:
 
-open_squad.py
-
-open_squad_metrics.py
-
 run_nsml.sh
+- 
+The bash file that sets our training settings such as:
+model: koelectra,  epochs: 2,  train and eval batch sizes: 24
 
 run_squad.py
+- 
+The main file that contains the training implementation codes to run, select paragraphs, evaluate, and predict.
 
-setup.py 
- -contains prerequisite libraries if used additionally to what nsml provides by default
+open_squad.py
+- 
+
+
+open_squad_metrics.py
+- 
+
+
+setup.py
+- 
+contains prerequisite libraries if used additionally to what nsml provides by default
 
 ## For Training
  - assuming you are allocated with at least one GPU, execute bash file - (for nsml: ./run_nsml.sh   for local: ./run_local.sh)
