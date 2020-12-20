@@ -53,7 +53,7 @@ setup.py
 contains prerequisite libraries if used additionally to what nsml provides by default
 
 ## For Training
- - assuming you are allocated with at least one GPU, execute bash file - (for nsml: ./run_nsml.sh   for local: ./run_local.sh)
+ - assuming you are allocated with at least one GPU, execute bash file - (for nsml: ./run_nsml.sh)
 We recommend running run_nsml.sh bash file since you are using the dataset already uploaded on nsml server.
 
 ## Our pretrained model which produced best score on nsml leader board
